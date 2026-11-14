@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <exception>
 #include <iostream>
 
@@ -24,8 +23,6 @@ int main() {
         generator.resume();
     } catch (const std::exception& error) {
         std::cerr << "Error: " << error.what() << "\n";
-        return EXIT_FAILURE;
     }
 
-    return EXIT_SUCCESS;
 }
